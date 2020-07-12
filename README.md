@@ -6,7 +6,7 @@ and consists two parts:
 (1) a dataset of the wheat-heads images (3434 files)  
 (2) a csv file specifying all bounding boxes coordinates, specified in COCO format (x,y,width,height))
 
-The original data was combined with augmneted data created using the Albumentation library (The augmented image generator is available in an additional notebook) aand transferred to VOC-PASCAL format (Xmin, Ymin, Xmax, Ymax)
+The original data was combined with augmneted data created using the Albumentation library (The augmented image generator is available in an additional notebook) and transferred to VOC-PASCAL format (Xmin, Ymin, Xmax, Ymax)
 The following object-detection models were considered:
 - Faster RCNN - Region based convolutional neural net
 - YOLO - "You Only Look Once"  
