@@ -12,7 +12,7 @@ The following object-detection models were considered:
 (2) YOLO - "You Only Look Once", an efficient grid-based convolutional neural net developed by DarkNet in 2015  
 
 In the RCNN models initial RoIs (regions of interest) are passed through CNN to define 4-parameters rectangles. YOLO on the other hand trains each image as a grid to produce a vector that defines the existance of an object, the rectancle coordinates and the labels.
-YOLO is considered  superior in terms of efficiency in many cases, it is often used for live-detection videos. However, I have decided to try FasterRCNN first using a pretrained RCNN model (fasterrcnn_resnet50_fpn) imported from the torchvision library. I intend to use YOLO, in its TensorFlow adaptation, for this project in the near future.
+Commonly, YOLO is considered superior in terms of efficiency, it is therefore often tilized for live-detection videos. However, for the current project, I have decided to try FasterRCNN first using a pretrained RCNN model (fasterrcnn_resnet50_fpn) imported from the torchvision library. I intend to use YOLO, in its TensorFlow adaptation, for this project in the near future.
 
 Evaluation was carried out according to the competition rules. The score of each bbox prediction is based on the IoU metric (intersection of union) and the number of true- detections is a function of the threshold - the minimal IoU score that is considered as a right detection. 
 ![](https://github.com/omrigo5/Portfolio-Omri-Goldberg/blob/master/Images/publish-1.png?raw=true)
