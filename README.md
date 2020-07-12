@@ -9,7 +9,7 @@ and consists two parts:
 The original data was combined with augmneted data created using the Albumentation library (the augmented image generator is available as an additional notebook) and transferred to VOC-PASCAL format (Xmin, Ymin, Xmax, Ymax).  
 The following object-detection models were considered:  
 (1) Faster RCNN - A region based convolutional neural net    
-(2) YOLO - "You Only Look Once", an efficient grid-based convolutional neural net developed by by DarkNet in 2015  
+(2) YOLO - "You Only Look Once", an efficient grid-based convolutional neural net developed by DarkNet in 2015  
 
 In the RCNN models initial RoIs (regions of interest) are passed through CNN to define 4-parameters rectangles. YOLO on the other hand trains each image as a grid to produce a vector that defines the existance of an object, the rectancle coordinates and the labels.
 YOLO is considered  superior in terms of efficiency in many cases, it is often used for live-detection videos. However, I have decided to try FasterRCNN first using a pretrained RCNN model (fasterrcnn_resnet50_fpn) imported from the torchvision library. I intend to use YOLO, in its TensorFlow adaptation, for this project in the near future.
