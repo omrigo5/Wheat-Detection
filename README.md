@@ -4,9 +4,9 @@ The raw data is provided from the Kaggle challange - Global Wheat-head Detection
 https://www.kaggle.com/c/global-wheat-detection/data    
 and consists two parts:  
 (1) a dataset of the wheat-heads images (3434 files)    
-(2) a csv file specifying all bounding boxes coordinates, specified in COCO format (x,y,width,height))  
+(2) a csv file specifying all bounding boxes coordinates, specified in COCO format (x, y, width, height))  
 
-The original data was combined with augmneted data created using the Albumentation library (The augmented image generator is available in an additional notebook) and transferred to VOC-PASCAL format (Xmin, Ymin, Xmax, Ymax)
+The original data was combined with augmneted data created using the Albumentation library (The augmented image generator is available as an additional notebook) and transferred to VOC-PASCAL format (Xmin, Ymin, Xmax, Ymax).  
 The following object-detection models were considered:  
 (1) Faster RCNN - A region based convolutional neural net    
 (2) YOLO - "You Only Look Once", an efficient grid-based convolutional neural net developed by by DarkNet in 2015
